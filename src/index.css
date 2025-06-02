@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F7FA;
+  color: #2E2E2E;
+}
+
+.fira-code {
+  font-family: 'Fira Code', monospace;
+}
+
+.nav-link:hover {
+  color: #FFD43B !important;
+}
