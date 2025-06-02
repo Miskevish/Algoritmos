@@ -9,9 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "dependencies": {    
     "aos": "^2.3.4",
-    "bootstrap": "^5.3.6",
+    "bootstrap": "^5.3.6",    
     "nodejs": "^0.0.0",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
