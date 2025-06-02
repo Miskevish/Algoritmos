@@ -30,18 +30,6 @@ body {
   gap: 1rem; 
 }
 
-
-.btn-custom-hover {
-  background-color: #FFD43B; 
-  color: #2E2E2E;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.btn-custom-hover:hover {
-  background-color: #2E2E2E;
-  color: #FFD43B;
-
 .logo {
   transition: transform 0.3s ease-in-out;
 }
@@ -61,4 +49,30 @@ body {
 .footer-logo:hover {
   transform: scale(1.1);
 }
+
+.btn-custom-hover {
+  background-color: #FFD43B;
+  color: #2E2E2E;
+  border: none;
+}
+
+.btn-custom-hover:hover {
+  background-color: #2E2E2E;
+  color: #FFD43B;
+  border: none;
+}
+.btn-custom-hover:active,
+.btn-custom-hover:focus,
+.btn-custom-hover:focus-visible {
+  background-color: #FFD43B !important;
+  color: #2E2E2E !important;
+  border: none !important;
+}
+.modal-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #E44D26;
+  font-weight:bold;
+}
+
 
