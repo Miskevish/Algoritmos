@@ -14,32 +14,32 @@ const languages = [
   {
     name: "Python",
     image: python,
-    info: "Lenguaje de alto nivel, usado en ciencia de datos, automatización y más.",
+    info: "Muy usado en ciencia de datos, inteligencia artificial, automatización.",
   },
   {
     name: "JavaScript",
     image: js,
-    info: "Lenguaje esencial para desarrollo web frontend y backend (Node.js).",
+    info: "Para páginas web interactivas (menús, animaciones).",
   },
   {
     name: "C++",
     image: cpp,
-    info: "Lenguaje poderoso para sistemas embebidos, videojuegos y rendimiento crítico.",
+    info: "Videojuegos, sistemas operativos, apps que necesitan velocidad.",
   },
   {
     name: "Java",
     image: java,
-    info: "Popular en aplicaciones empresariales, Android y plataformas grandes.",
+    info: "Aplicaciones móviles, bancos, sistemas grandes.",
   },
   {
     name: "C#",
     image: csharp,
-    info: "Lenguaje de Microsoft, usado en apps Windows, videojuegos (Unity) y más.",
+    info: "Usado para desarrollo de videojuegos (con Unity), apps de escritorio y web (con .NET).",
   },
   {
     name: "HTML/CSS",
     image: htmlcss,
-    info: "Base de toda página web: estructura (HTML) y estilos (CSS).",
+    info: "(No son lenguajes de programación puros) pero sirven para crear la estructura y diseño de páginas web.",
   },
 ];
 
@@ -57,7 +57,7 @@ function Home() {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container-fluid mt-5 px-4">
       <div className="row">
         {/* Columna principal */}
         <div className="col-lg-9">
@@ -80,7 +80,10 @@ function Home() {
                   />
                   <div className="card-body text-center">
                     <h5 className="card-title">{lang.name}</h5>
-                    <Button variant="warning" onClick={() => handleShow(lang)}>
+                    <Button
+                      className="btn-custom-hover"
+                      onClick={() => handleShow(lang)}
+                    >
                       Ver más
                     </Button>
                   </div>
@@ -90,14 +93,17 @@ function Home() {
           </div>
         </div>
 
-        {/* Columna del anuncio */}
-        <div className="col-lg-3 d-none d-lg-block" data-aos="fade-left">
-          <div className="position-sticky" style={{ top: "177px" }}>
+        {/* Columna del anuncio a la derecha */}
+        <div
+          className="col-lg-3 d-none d-lg-flex align-items-center justify-content-end"
+          data-aos="fade-left"
+        >
+          <div style={{ width: "100%" }}>
             <img
               src={gifUnsta}
               alt="Anuncio UNSTA"
-              className="img-fluid rounded shadow-sm"
-              style={{ maxWidth: "100%", height: "auto" }}
+              className="img-fluid rounded shadow-sm w-100"
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>
@@ -112,7 +118,7 @@ function Home() {
           <p>{selectedLang?.info}</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShow(false)}>
+          <Button className="btn-custom-hover" onClick={() => setShow(false)}>
             Cerrar
           </Button>
         </Modal.Footer>
