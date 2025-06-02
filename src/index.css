@@ -4,10 +4,29 @@ body {
   color: #2E2E2E;
 }
 
-.fira-code {
+.bg-color{
+  background-color: #E44D26;
+}
+
+.nav-link {
   font-family: 'Fira Code', monospace;
+  color: white;
+  font-size: large;
+  padding: 0.5rem 1rem;
+  text-align: center;
 }
 
 .nav-link:hover {
-  color: #FFD43B !important;
+  color: #2E2E2E !important;
 }
+
+.nav-link.active {
+  color: #2E2E2E !important;
+  border-radius: 5px;
+  font-weight: bold;  
+}
+
+.navbar-nav {
+  gap: 1rem; 
+}
+
