@@ -30,6 +30,7 @@ body {
   gap: 1rem; 
 }
 
+
 .btn-custom-hover {
   background-color: #FFD43B; 
   color: #2E2E2E;
@@ -40,4 +41,23 @@ body {
 .btn-custom-hover:hover {
   background-color: #2E2E2E;
   color: #FFD43B;
+
+.logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1); 
+}
+
+.fira-code{
+  font-family: 'Fira Code', monospace;
+}
+
+.footer-logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
 }
