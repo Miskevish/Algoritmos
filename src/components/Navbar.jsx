@@ -16,7 +16,7 @@ function Navbar() {
             src={logo}
             alt="Logo"
             height="125"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top logo"
           />
         </BsNavbar.Brand>
 
