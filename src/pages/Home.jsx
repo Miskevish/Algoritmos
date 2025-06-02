@@ -118,7 +118,7 @@ function Home() {
           {/* Columna principal */}
           <div className="col-lg-9">
             <h1 className="text-center fira-code mb-5" data-aos="fade-down">
-              Lenguajes de Programación
+              Ejemplos de Lenguajes de Programación
             </h1>
             <div className="row justify-content-center">
               {languages.map((lang, i) => (
