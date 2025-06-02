@@ -73,7 +73,6 @@ function Home() {
   };
 
   return (
-
     <div className="container-fluid px-0">
       {/* Carrusel personalizado */}
       <div className="bg-light py-4 px-3 px-md-5" data-aos="fade-up">
@@ -113,6 +112,7 @@ function Home() {
         </div>
       </div>
 
+      {/* Contenido principal */}
       <div className="container-fluid mt-5 px-4">
         <div className="row">
           {/* Columna principal */}
@@ -143,44 +143,13 @@ function Home() {
                         Ver más
                       </Button>
                     </div>
-
-    <div className="container-fluid mt-5 px-4">
-      <div className="row">
-        {/* Columna principal */}
-        <div className="col-lg-9">
-          <h1 className="text-center fira-code mb-4" data-aos="fade-down">
-            Ejemplos de Lenguajes de Programación
-          </h1>
-          <div className="row justify-content-center">
-            {languages.map((lang, i) => (
-              <div
-                className="col-12 col-sm-6 col-lg-4 mb-4"
-                key={i}
-                data-aos="zoom-in"
-              >
-                <div className="card shadow-sm h-100">
-                  <img
-                    src={lang.image}
-                    className="card-img-top p-3"
-                    alt={lang.name}
-                    style={{ height: "200px", objectFit: "contain" }}
-                  />
-                  <div className="card-body text-center">
-                    <h5 className="card-title">{lang.name}</h5>
-                    <Button
-                      className="btn-custom-hover"
-                      onClick={() => handleShow(lang)}
-                    >
-                      Ver más
-                    </Button>
-
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Columna del anuncio a la derecha */}
+          {/* Columna del anuncio */}
           <div
             className="col-lg-3 d-none d-lg-flex align-items-center justify-content-end"
             data-aos="fade-left"
