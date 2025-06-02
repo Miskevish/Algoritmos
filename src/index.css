@@ -35,5 +35,17 @@ body {
 }
 
 .logo:hover {
-  transform: scale(1.1); /* Agranda el logo un 10% */
+  transform: scale(1.1); 
+}
+
+.fira-code{
+  font-family: 'Fira Code', monospace;
+}
+
+.footer-logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
 }
