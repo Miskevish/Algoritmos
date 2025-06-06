@@ -14,32 +14,32 @@ const languages = [
   {
     name: "Python",
     image: python,
-    info: "Lenguaje de alto nivel, usado en ciencia de datos, automatización y más.",
+    info: "Muy usado en ciencia de datos, inteligencia artificial,automatización.",
   },
   {
     name: "JavaScript",
     image: js,
-    info: "Lenguaje esencial para desarrollo web frontend y backend (Node.js).",
+    info: "Para páginas web interactivas (menús, animaciones).",
   },
   {
     name: "C++",
     image: cpp,
-    info: "Lenguaje poderoso para sistemas embebidos, videojuegos y rendimiento crítico.",
+    info: "Videojuegos, sistemas operativos, apps que necesitan velocidad.",
   },
   {
     name: "Java",
     image: java,
-    info: "Popular en aplicaciones empresariales, Android y plataformas grandes.",
+    info: "Aplicaciones móviles, bancos, sistemas grandes.",
   },
   {
     name: "C#",
     image: csharp,
-    info: "Lenguaje de Microsoft, usado en apps Windows, videojuegos (Unity) y más.",
+    info: "Usado para desarrollo de videojuegos (con Unity), apps de escritorio y web (con .NET).",
   },
   {
     name: "HTML/CSS",
     image: htmlcss,
-    info: "Base de toda página web: estructura (HTML) y estilos (CSS).",
+    info: "(No son lenguajes de programación puros) pero sirven para crear la estructura y diseño de páginas web.",
   },
 ];
 
@@ -74,7 +74,6 @@ function Home() {
 
   return (
     <div className="container-fluid px-0">
-      {/* Carrusel personalizado */}
       <div className="bg-light py-4 px-3 px-md-5" data-aos="fade-up">
         <div
           className="rounded shadow-sm p-4 w-100 px-2 px-md-4 px-lg-5"
@@ -112,10 +111,8 @@ function Home() {
         </div>
       </div>
 
-      {/* Contenido principal */}
       <div className="container-fluid mt-5 px-4">
         <div className="row">
-          {/* Columna principal */}
           <div className="col-lg-9">
             <h1 className="text-center fira-code mb-5" data-aos="fade-down">
               Ejemplos de Lenguajes de Programación
@@ -149,7 +146,6 @@ function Home() {
             </div>
           </div>
 
-          {/* Columna del anuncio */}
           <div
             className="col-lg-3 d-none d-lg-flex align-items-center justify-content-end"
             data-aos="fade-left"
@@ -165,7 +161,6 @@ function Home() {
           </div>
         </div>
 
-        {/* Modal */}
         <Modal show={show} onHide={() => setShow(false)} centered>
           <Modal.Header closeButton>
             <Modal.Title>{selectedLang?.name}</Modal.Title>
