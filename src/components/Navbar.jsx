@@ -6,7 +6,6 @@ function Navbar() {
   return (
     <BsNavbar className="bg-color" variant="dark" expand="lg">
       <Container>
-        {/* Logo a la izquierda */}
         <BsNavbar.Brand
           as={NavLink}
           to="/"
@@ -20,10 +19,8 @@ function Navbar() {
           />
         </BsNavbar.Brand>
 
-        {/* Botón hamburguesa para responsive */}
         <BsNavbar.Toggle aria-controls="basic-navbar-nav" />
 
-        {/* Enlaces alineados a la derecha */}
         <BsNavbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto d-flex flex-row align-items-center">
             <NavLink

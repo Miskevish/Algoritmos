@@ -183,7 +183,6 @@ function Paradigmas() {
         </p>
       </div>
 
-      {/* Modal */}
       <Modal show={show} onHide={() => setShow(false)} centered>
         <Modal.Header closeButton>
           <Modal.Title>{paradigmaSeleccionado?.nombre}</Modal.Title>
